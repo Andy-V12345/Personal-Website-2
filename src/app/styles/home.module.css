@@ -1,0 +1,36 @@
+.container {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.hero {
+    display: flex;
+    height: 300px;
+    padding: 0 75px;
+}
+
+.heroTextContainer {
+    margin: auto 0;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.heroTitle {
+    color: #1F2937;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1;
+}
+
+.contactContainer {
+    display: flex;
+    gap: 15px;
+    font-size: 22px;
+    color: #1F2937;
+}
+
+.link:hover {
+    opacity: .5;
+}
