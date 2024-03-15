@@ -4,7 +4,7 @@ import { SiSwift, SiPython, SiJavascript, SiReact, SiNextdotjs, SiPostgresql, Si
 
 export default function Skills() {
     return (
-        <div className={styles.container}>
+        <div id="skills" className={styles.container}>
             <SectionTitle title="My Skills"/>
             <p className={`mx-auto text-sm text-gray-600 px-4 text-center`}>Some of the skills, tools, and technologies I love using:</p>
             <div className={`${styles.gridDisplay} grid-cols-2 sm:grid-cols-4`}>

@@ -5,7 +5,7 @@ import Image from "next/image"
 export default function Experiences({width}: {width: number}) {
 
     return (
-        <div className={styles.container}>
+        <div id="experience" className={styles.container}>
             <SectionTitle title="My Experience" />
             <p className={`mx-auto text-sm text-gray-600`}>A quick summary of my recent experiences:</p>
             <div className={`flex flex-col gap-9 w-10/12 md:w-4/5 mx-auto`}>
