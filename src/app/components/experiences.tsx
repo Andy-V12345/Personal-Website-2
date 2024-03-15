@@ -16,7 +16,7 @@ export default function Experiences() {
                             <p className={`text-sm font-semibold text-right my-auto grow`}>Jun 2023 - Aug 2023</p>
                         </div>
                         <p className={`text-md sm:text-lg`}>Backend SWE Intern</p>
-                        <p className={`text-gray-500 text-sm sm:text-md`}>Developed a backend system for a visitor management system using Java Spring Boot</p>
+                        <p className={`text-gray-500 text-sm sm:text-md`}>Developed a backend system for a visitor management system using Java Spring Boot.</p>
                     </div>
                 </div>
                 <div className={`${styles.experienceContainer} w-full`}>
@@ -27,7 +27,7 @@ export default function Experiences() {
                             <p className={`text-sm font-semibold text-right my-auto grow`}>Sep 2023 - present</p>
                         </div>
                         <p className={`text-md sm:text-lg`}>CS Peer Mentor</p>
-                        <p className={`text-gray-500 text-sm sm:text-md`}>Hosted office hours for COMP_SCI_211: Fundamentals of Programming in C/C++</p>
+                        <p className={`text-gray-500 text-sm sm:text-md`}>Hosted office hours for COMP_SCI_211: Fundamentals of Programming in C/C++.</p>
                     </div>
                 </div>
                 <div className={`${styles.experienceContainer} w-full`}>
@@ -38,7 +38,7 @@ export default function Experiences() {
                             <p className={`text-sm font-semibold text-right my-auto grow`}>Jan 2024 - present</p>
                         </div>
                         <p className={`text-md sm:text-lg`}>Mobile App Developer</p>
-                        <p className={`text-gray-500 text-sm sm:text-md`}>Developed the Dillo Day App using React Native</p>
+                        <p className={`text-gray-500 text-sm sm:text-md`}>Collaborated with the tech team to create the Dillo Day App using React Native.</p>
                     </div>
                 </div>
             </div>
