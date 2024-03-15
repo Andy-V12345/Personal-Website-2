@@ -16,12 +16,13 @@ export default function FloatingNav() {
 
     const handleNavigation = useCallback((e: { currentTarget: any }) => {
         const window = e.currentTarget;
-        if (y - window.scrollY > 4) {
+        if (y - window.scrollY >= 2) {
             setFloating(true)
         } else if (y - window.scrollY < -2) {
             setFloating(false)
         }
         setY(window.scrollY);
+        
     }, [y]);
 
     useEffect(() => {

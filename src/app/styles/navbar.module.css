@@ -11,9 +11,8 @@
     background-color: white;
     z-index: 10;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    border-radius: 20px;
+    border-radius: 25px;
 }
-
 
 .navButton {
     margin: auto 0;
@@ -28,4 +27,15 @@
 .navButton:hover {
     background-color: #D1D5DB;
     transition: 0.15s ease-in-out;
+}
+
+@media screen and (max-width: 700px) {
+    .floatingContainer {
+        border-radius: 20px;
+        padding: 10px;
+        gap: 10px;
+    }
+    .navButton {
+        font-size: 12px;
+    }
 }

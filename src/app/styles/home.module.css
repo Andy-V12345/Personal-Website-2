@@ -2,12 +2,13 @@
     min-height: 100vh;
     background-color: white;
     margin: 0 auto;
+    
 }
 
 .hero {
     display: flex;
     padding-bottom: 75px;
-    padding-top: 75px;
+    padding-top: 60px;
 }
 
 .heroTextContainer {
