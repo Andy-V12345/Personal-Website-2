@@ -13,7 +13,8 @@
 
 .hero {
     display: flex;
-    padding: 75px 75px 75px 75px;
+    padding-bottom: 75px;
+    padding-top: 75px;
 }
 
 .heroTextContainer {
@@ -22,13 +23,12 @@
     max-width: 700px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 
 .heroTitle {
     color: #1F2937;
     font-weight: bold;
-    font-size: 40px;
     line-height: 1;
 }
 

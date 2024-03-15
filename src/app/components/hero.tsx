@@ -4,10 +4,10 @@ import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 export default function Hero() {
     return(
-        <div className={styles.hero}>
+        <div className={`${styles.hero} px-10 sm:px-20`}>
           <div className={styles.heroTextContainer}>
-            <h1 className={`${styles.heroTitle}`}>Hi, I'm Andy! &#128075;</h1>
-            <h3 className={`text-gray-600`}>
+            <h1 className={`${styles.heroTitle} text-3xl sm:text-4xl`}>Hi, I'm Andy! &#128075;</h1>
+            <h3 className={`text-gray-600 text-sm sm:text-md`}>
             Currently, I'm a Computer Science student at Northwestern University aspiring to become a software engineer. I have experience in both front-end and back-end development and am continually seeking opportunities to create user-centric solutions.
             </h3>
             <div className={`${styles.contactContainer}`}>
