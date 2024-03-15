@@ -67,7 +67,7 @@ function ProjectBox({url, name, image, description, shadow, color, showLink, lin
     const [isHovered, setHovered] = useState(false)
 
     return(
-        <Link className={`w-full ${isHovered ? `${styles.hovered}` : `${styles.unhovered}`}`} href={url} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
+        <Link className={`w-full ${isHovered ? `${styles.hovered}` : `${styles.unhovered}`}`} href={url} onClick={() => setHovered(false)} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
             <div className={`${styles.projectContainer} ${shadow}`}>
                 <Image className={`${styles.image} my-auto rounded-xl`} src={image} width={100} height={100} alt="accountive logo" />
                 <div className={styles.textContainer}>
