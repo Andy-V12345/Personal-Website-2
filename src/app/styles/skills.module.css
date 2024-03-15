@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.gridDisplay {
+    margin: 0 auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    width: 80%;
+}
+
+.skillContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.swift {
+    color: #F05138;
+}
+
+.python {
+    color: #3776AB;
+}
+
+.javascript {
+    color: #F7DF1E;
+}
+
+.react {
+    color: #61DAFB;
+}
+
+.nextjs {
+    color: #000000;
+}
+
+.postgres {
+    color: #4169E1;
+}
+
+.firebase {
+    color: #FFCA28;
+}
+
+.docker {
+    color: #2496ED;
+}
