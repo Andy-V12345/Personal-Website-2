@@ -1,16 +1,25 @@
 .container {
-    overflow: hidden;
+    overflow:scroll;
+    position: relative;
     height: 100vh;
 }
 
+/* .smallContainer {
+    height: 100vh;
+    max-width: 1000px;
+    position: relative;
+    background-color: white;
+} */
+
 .hero {
     display: flex;
-    padding: 75px 75px;
+    padding: 75px 75px 75px 75px;
 }
 
 .heroTextContainer {
     margin: auto 0;
     width: 100%;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
     gap: 15px;
