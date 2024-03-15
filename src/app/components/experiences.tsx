@@ -12,18 +12,18 @@ export default function Experiences() {
                     <Image className={`${styles.image}`} src="/infosys_logo.png" width={75} height={75} alt="infosys logo" />
                     <div className={styles.textContainer}>
                         <div className={`flex`}>
-                            <p className={`text-md sm:text-xl font-semibold my-auto`}>Infosys</p>
+                            <p className={`text-lg sm:text-xl font-semibold my-auto`}>Infosys</p>
                             <p className={`text-sm font-semibold text-right my-auto grow`}>Jun 2023 - Aug 2023</p>
                         </div>
                         <p className={`text-md sm:text-lg`}>Backend SWE Intern</p>
-                        <p className={`text-gray-500 text-sm sm:text-md`}>Developed a backend system for a visitor management system using Java Spring Boot.</p>
+                        <p className={`text-gray-500 text-sm sm:text-md`}>Developed a backend system for a visitor management system using Java Spring Boot and PostgreSQL.</p>
                     </div>
                 </div>
                 <div className={`${styles.experienceContainer} w-full`}>
                     <Image className={`${styles.image}`} src="/northwestern_logo.png" width={75} height={75} alt="northwestern logo" />
                     <div className={styles.textContainer}>
                         <div className={`flex`}>
-                            <p className={`text-md sm:text-xl font-semibold my-auto`}>Northwestern University</p>
+                            <p className={`text-lg sm:text-xl font-semibold my-auto`}>Northwestern University</p>
                             <p className={`text-sm font-semibold text-right my-auto grow`}>Sep 2023 - present</p>
                         </div>
                         <p className={`text-md sm:text-lg`}>CS Peer Mentor</p>
@@ -34,7 +34,7 @@ export default function Experiences() {
                     <Image className={`${styles.image}`} src="/mayfest_logo.png" width={75} height={75} alt="infosys logo" />
                     <div className={styles.textContainer}>
                         <div className={`flex`}>
-                            <p className={`text-md sm:text-xl font-semibold my-auto`}>Mayfest Productions</p>
+                            <p className={`text-lg sm:text-xl font-semibold my-auto`}>Mayfest Productions</p>
                             <p className={`text-sm font-semibold text-right my-auto grow`}>Jan 2024 - present</p>
                         </div>
                         <p className={`text-md sm:text-lg`}>Mobile App Developer</p>

@@ -12,7 +12,6 @@
     flex-direction: row;
     gap: 15px;
     margin: 0 auto;
-    flex-wrap: wrap;
 }
 
 
@@ -27,4 +26,5 @@
 
 .image {
     object-fit: contain;
+    margin: auto 0;
 }
