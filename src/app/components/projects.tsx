@@ -9,7 +9,7 @@ export default function Projects() {
     return(
         <div className={`${styles.container}`}>
             <SectionTitle title="My Projects" />
-            <p className={`mx-auto text-sm text-gray-600`}>Here are some of my favorite projects I've worked on:</p>
+            <p className={`mx-auto text-sm text-gray-600`}>Some of my favorite projects I've worked on:</p>
             <div className={`flex gap-11 flex-col w-11/12 sm:w-3/4 mx-auto`}>
                 <ProjectBox url="https://apps.apple.com/us/app/accountive/id6468552927" 
                             color={`${styles.accountiveColor}`} shadow={`${styles.accountiveShadow}`} 
