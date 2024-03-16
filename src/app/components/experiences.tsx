@@ -12,7 +12,7 @@ export default function Experiences({width}: {width: number}) {
                 <div className={`${styles.experienceContainer} w-full`}>
                     <Image className={`${styles.image}`} src="/infosys_logo.png" width={75} height={75} alt="infosys logo" />
                     <div className={styles.textContainer}>
-                        {width <= 768 ?
+                        {width <= 768 && width > 0 ?
                             <>
                                 <p className={`text-sm font-semibold`}>Jun 2023 - Aug 2023</p>
                                 <p className={`text-lg sm:text-xl font-semibold`}>Infosys Limited</p>
@@ -30,7 +30,7 @@ export default function Experiences({width}: {width: number}) {
                 <div className={`${styles.experienceContainer} w-full`}>
                     <Image className={`${styles.image}`} src="/northwestern_logo.png" width={75} height={75} alt="northwestern logo" />
                     <div className={styles.textContainer}>
-                        {width <= 768 ?
+                        {width <= 768 && width > 0 ?
                             <>
                                 <p className={`text-sm font-semibold`}>Sep 2023 - present</p>
                                 <p className={`text-lg sm:text-xl font-semibold`}>Northwestern University</p>
@@ -48,7 +48,7 @@ export default function Experiences({width}: {width: number}) {
                 <div className={`${styles.experienceContainer} w-full`}>
                     <Image className={`${styles.image}`} src="/mayfest_logo.png" width={75} height={75} alt="mayfest logo" />
                     <div className={styles.textContainer}>
-                        {width <= 768 ?
+                        {width <= 768 && width > 0 ?
                             <>
                                 <p className={`text-sm font-semibold`}>Jan 2024 - present</p>
                                 <p className={`text-lg sm:text-xl font-semibold`}>Mayfest Productions</p>
