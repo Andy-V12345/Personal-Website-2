@@ -19,14 +19,14 @@ export default function Projects() {
                             linkText="See on App Store"
                             showLink={true}
                 />
-                <ProjectBox url=""
+                <ProjectBox url="https://worldrelief.org/"
                             color={`${styles.wrColor}`}
                             shadow={`${styles.wrShadow}`}
                             image="/world_relief_logo.jpg"
                             name="World Relief Data Entry System"
                             description="Revamped a job data entry and querying system using Next.js and Firebase."
-                            showLink={false}
-                            linkText=""
+                            showLink={true}
+                            linkText="About World Relief"
                 />
                 <ProjectBox url="https://apps.apple.com/us/app/quick-mental-math/id1520620798"
                             color={`${styles.qmmColor}`}
