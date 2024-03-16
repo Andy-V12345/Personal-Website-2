@@ -1,6 +1,6 @@
 import styles from "../styles/home.module.css"
 import Link from "next/link"
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope, FaDownload } from 'react-icons/fa';
 
 export default function Hero() {
     return(
@@ -19,6 +19,12 @@ export default function Hero() {
               </Link>
               <Link className={styles.link} href="mailto:andyvu04@gmail.com">
                 <FaEnvelope />
+              </Link>
+              <Link className={`${styles.downloadButton} py-2 px-3 rounded-lg text-xs font-medium text-white ${styles.link}`} href={"/Andy_Vu_Resume.pdf"}>
+                <div className={`flex justify-center my-auto gap-2`}>
+                  <FaDownload className={`my-auto`} />
+                  <p className={`my-auto`}>Download My Resume</p>
+                </div>
               </Link>
             </div>
           </div>

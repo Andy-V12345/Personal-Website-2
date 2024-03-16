@@ -2,7 +2,11 @@
     min-height: 100vh;
     background-color: white;
     margin: 0 auto;
-    
+}
+
+.downloadButton {
+    background-color: #1F2937;
+    width: max-content;
 }
 
 .hero {
@@ -31,6 +35,10 @@
     gap: 15px;
     font-size: 22px;
     color: #1F2937;
+}
+
+.link {
+    margin: auto 0;
 }
 
 .link:hover {
