@@ -1,6 +1,7 @@
 import styles from "../styles/skills.module.css"
 import SectionTitle from "./sectionTitle"
-import { SiSwift, SiPython, SiJavascript, SiReact, SiNextdotjs, SiPostgresql, SiFirebase, SiDocker } from "react-icons/si"
+import { SiSwift, SiPython, SiJavascript, SiReact, SiNextdotjs, SiPostgresql, SiFirebase, SiDocker, SiNodedotjs, SiAmazonaws, SiSpringboot } from "react-icons/si"
+import { FaJava } from "react-icons/fa"
 
 export default function Skills() {
     return (
@@ -39,6 +40,22 @@ export default function Skills() {
                 <div className={styles.skillContainer}>
                     <SiDocker className={`text-5xl mx-auto ${styles.docker}`} />
                     <p className={`text-center text-sm  font-semibold`}>Docker</p>
+                </div>
+                <div className={styles.skillContainer}>
+                    <FaJava className={`text-5xl mx-auto ${styles.java}`} />
+                    <p className={`text-center text-sm  font-semibold`}>Java</p>
+                </div>
+                <div className={styles.skillContainer}>
+                    <SiNodedotjs className={`text-5xl mx-auto ${styles.nodejs}`} />
+                    <p className={`text-center text-sm  font-semibold`}>Node.js</p>
+                </div>
+                <div className={styles.skillContainer}>
+                    <SiAmazonaws className={`text-5xl mx-auto ${styles.aws}`} />
+                    <p className={`text-center text-sm  font-semibold`}>AWS</p>
+                </div>
+                <div className={styles.skillContainer}>
+                    <SiSpringboot className={`text-5xl mx-auto ${styles.springboot}`} />
+                    <p className={`text-center text-sm  font-semibold`}>Spring Boot</p>
                 </div>
             </div>
         </div>

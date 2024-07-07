@@ -1,5 +1,5 @@
 import styles from "../styles/navbar.module.css"
-import { motion, useScroll } from "framer-motion"
+import { motion } from "framer-motion"
 import Link from "next/link"
 import { useEffect, useState, useCallback } from "react"
 

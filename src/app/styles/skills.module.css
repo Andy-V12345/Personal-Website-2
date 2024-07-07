@@ -17,7 +17,7 @@
 .skillContainer {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     color: #1F2937;
 }
 
@@ -51,4 +51,20 @@
 
 .docker {
     color: #2496ED;
+}
+
+.java {
+    color: #F8971F;
+}
+
+.nodejs {
+    color: #5FA04E;
+}
+
+.aws {
+    color: #232F3E;
+}
+
+.springboot {
+    color: #6DB33F;
 }

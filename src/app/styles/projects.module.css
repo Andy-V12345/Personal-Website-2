@@ -48,6 +48,14 @@
     color: rgb(237,29,36);
 }
 
+.nomifyShadow{
+    box-shadow: rgb(123,196,130) 0px 2px 8px 0px;
+}
+
+.nomifyColor {
+    color: rgb(123,196,130);
+}
+
 .textContainer {
     color: #1F2937;
     display: flex;
