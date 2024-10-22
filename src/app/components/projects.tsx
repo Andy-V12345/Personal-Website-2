@@ -11,12 +11,20 @@ export default function Projects() {
             <SectionTitle title="My Projects" />
             <p className={`mx-auto text-sm text-gray-600`}>Some of my favorite projects I've worked on:</p>
             <div className={`flex gap-11 flex-col w-11/12 sm:w-3/4 mx-auto bg-white`}>
-                <ProjectBox url="https://github.com/Andy-V12345/Nomify" 
+                <ProjectBox url="https://hire-me-please-beta.vercel.app/" 
+                            color={`${styles.hmpColor}`} shadow={`${styles.hmpShadow}`} 
+                            name="Hire Me Please" 
+                            image="/hmp_logo.png" 
+                            description="A website that helps with SWE internship recruitment"
+                            linkText="Visit website"
+                            showLink={true}
+                />
+                <ProjectBox url="https://apps.apple.com/us/app/nomify/id6529250827" 
                             color={`${styles.nomifyColor}`} shadow={`${styles.nomifyShadow}`} 
                             name="Nomify" 
                             image="/nomify_logo.png" 
                             description="A personalized food allergen assistant powered by Gemini AI"
-                            linkText="GitHub Repo"
+                            linkText="See on app store"
                             showLink={true}
                 />
                 <ProjectBox url="https://apps.apple.com/us/app/accountive/id6468552927" 
@@ -75,7 +83,7 @@ function ProjectBox({url, name, image, description, shadow, color, showLink, lin
     const [isHovered, setHovered] = useState(false)
 
     return(
-        <Link className={`w-full z-0 bg-white ${isHovered ? `${styles.hovered}` : `${styles.unhovered}`}`} href={url} onClick={() => setHovered(false)} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
+        <Link target="_blank" className={`w-full z-0 bg-white ${isHovered ? `${styles.hovered}` : `${styles.unhovered}`}`} href={url} onClick={() => setHovered(false)} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
             <div className={`${styles.projectContainer} ${shadow}`}>
                 <Image className={`${styles.image} my-auto rounded-xl`} src={image} width={100} height={100} alt="project logo" />
                 <div className={styles.textContainer}>

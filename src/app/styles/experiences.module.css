@@ -10,7 +10,7 @@
 .experienceContainer {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 30px;
     margin: 0 auto;
 }
 

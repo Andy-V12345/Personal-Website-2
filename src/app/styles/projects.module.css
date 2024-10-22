@@ -9,7 +9,7 @@
 .projectContainer {
     display: flex;  
     border-radius: 15px;
-    gap: 15px;
+    gap: 20px;
     padding: 20px;
     width: 100%;
     background-color: white;
@@ -54,6 +54,14 @@
 
 .nomifyColor {
     color: rgb(123,196,130);
+}
+
+.hmpColor {
+    color: rgb(73,207,203);
+}
+
+.hmpShadow {
+    box-shadow: rgb(73,207,203) 0px 2px 8px 0px;
 }
 
 .textContainer {
