@@ -1,87 +1,94 @@
 .container {
-    background-color: white;
-    padding-bottom: 75px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+	background-color: white;
+	padding-bottom: 75px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
 
 .projectContainer {
-    display: flex;  
-    border-radius: 15px;
-    gap: 20px;
-    padding: 20px;
-    width: 100%;
-    background-color: white;
+	display: flex;
+	border-radius: 15px;
+	gap: 20px;
+	padding: 20px;
+	width: 100%;
+	background-color: white;
 }
 
 .accountiveShadow {
-    box-shadow: rgb(157,188,236) 0px 2px 8px 0px;  
+	box-shadow: rgb(157, 188, 236) 0px 2px 8px 0px;
 }
 
 .accountiveColor {
-    color: rgb(157,188,236);
+	color: rgb(157, 188, 236);
 }
 
 .qmmShadow {
-    box-shadow: rgb(102,62,178) 0px 2px 8px 0px;  
-
+	box-shadow: rgb(102, 62, 178) 0px 2px 8px 0px;
 }
 
 .qmmColor {
-    color: rgb(102,62,178);
+	color: rgb(102, 62, 178);
 }
 
 .wrShadow {
-    box-shadow: rgb(136,188,69) 0px 2px 8px 0px;
+	box-shadow: rgb(136, 188, 69) 0px 2px 8px 0px;
 }
 
 .wrColor {
-    color: rgb(136,188,69);
+	color: rgb(136, 188, 69);
 }
 
 .pokerShadow {
-    box-shadow: rgb(237,29,36) 0px 2px 8px 0px;
+	box-shadow: rgb(237, 29, 36) 0px 2px 8px 0px;
 }
 
 .pokerColor {
-    color: rgb(237,29,36);
+	color: rgb(237, 29, 36);
 }
 
-.nomifyShadow{
-    box-shadow: rgb(123,196,130) 0px 2px 8px 0px;
+.nomifyShadow {
+	box-shadow: rgb(123, 196, 130) 0px 2px 8px 0px;
 }
 
 .nomifyColor {
-    color: rgb(123,196,130);
+	color: rgb(123, 196, 130);
 }
 
 .hmpColor {
-    color: rgb(73,207,203);
+	color: rgb(73, 207, 203);
 }
 
 .hmpShadow {
-    box-shadow: rgb(73,207,203) 0px 2px 8px 0px;
+	box-shadow: rgb(73, 207, 203) 0px 2px 8px 0px;
+}
+
+.leetpatternsColor {
+	color: #fd8913;
+}
+
+.leetpatternsShadow {
+	box-shadow: #fd8913 0px 2px 8px 0px;
 }
 
 .textContainer {
-    color: #1F2937;
-    display: flex;
-    flex-direction: column;
-    margin: auto 0;
-    flex-grow: 1;
+	color: #1f2937;
+	display: flex;
+	flex-direction: column;
+	margin: auto 0;
+	flex-grow: 1;
 }
 
 .image {
-    object-fit: contain;
+	object-fit: contain;
 }
 
 .hovered {
-    transform: scale(1.05);
-    transition: 0.3s ease-in-out;
+	transform: scale(1.05);
+	transition: 0.3s ease-in-out;
 }
 
 .unhovered {
-    transform: scale(1.0);
-    transition: 0.3s ease-in-out;
+	transform: scale(1);
+	transition: 0.3s ease-in-out;
 }
