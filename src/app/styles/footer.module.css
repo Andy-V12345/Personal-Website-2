@@ -1,18 +1,16 @@
 .container {
-    background-color: white;
-    display: flex;
-    padding: 30px;
-    border-top: solid #D1D5DB 1px;
+	display: flex;
+	padding: 15px;
 }
 
 .contactContainer {
-    display: flex;
-    gap: 15px;
-    font-size: 22px;
-    color: #1F2937;
-    margin: auto 0;
+	display: flex;
+	gap: 15px;
+	font-size: 22px;
+	color: #e5e7eb;
+	margin: auto 0;
 }
 
 .link:hover {
-    opacity: .5;
+	opacity: 0.5;
 }

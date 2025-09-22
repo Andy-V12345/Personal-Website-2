@@ -9,12 +9,7 @@ export default function Projects() {
 	return (
 		<div id="projects" className={`${styles.container}`}>
 			<SectionTitle title="My Projects" />
-			<p className={`mx-auto text-sm text-gray-600`}>
-				Some of my favorite projects I've worked on:
-			</p>
-			<div
-				className={`flex gap-11 flex-col w-11/12 sm:w-3/4 mx-auto bg-white`}
-			>
+			<div className={`flex gap-11 flex-col mx-auto`}>
 				<ProjectBox
 					url="https://leetpatternsai.com"
 					color={`${styles.leetpatternsColor}`}
@@ -22,16 +17,6 @@ export default function Projects() {
 					name="LeetPatterns.ai"
 					image="/leetpatterns_logo.png"
 					description="A web app where users can practice identifying common LeetCode patterns with AI generated questions and explanations"
-					linkText="Visit website"
-					showLink={true}
-				/>
-				<ProjectBox
-					url="https://hire-me-please-beta.vercel.app/"
-					color={`${styles.hmpColor}`}
-					shadow={`${styles.hmpShadow}`}
-					name="Hire Me Please"
-					image="/hmp_logo.png"
-					description="A website that helps with SWE internship recruitment"
 					linkText="Visit website"
 					showLink={true}
 				/>
@@ -106,7 +91,7 @@ function ProjectBox({
 	return (
 		<Link
 			target="_blank"
-			className={`w-full z-0 bg-white ${
+			className={`w-full z-0 glass ${
 				isHovered ? `${styles.hovered}` : `${styles.unhovered}`
 			}`}
 			href={url}
@@ -114,7 +99,9 @@ function ProjectBox({
 			onMouseEnter={() => setHovered(true)}
 			onMouseLeave={() => setHovered(false)}
 		>
-			<div className={`${styles.projectContainer} ${shadow}`}>
+			<div
+				className={`${styles.projectContainer} ${shadow} ${styles.customShadowRadius}`}
+			>
 				<Image
 					className={`${styles.image} my-auto rounded-xl`}
 					src={image}
@@ -123,16 +110,18 @@ function ProjectBox({
 					alt="project logo"
 				/>
 				<div className={styles.textContainer}>
-					<p className={`text-md sm:text-xl font-semibold my-auto`}>
+					<p
+						className={`text-md sm:text-xl font-semibold my-auto text-white`}
+					>
 						{name}
 					</p>
-					<p className={`text-gray-600 text-sm sm:text-md`}>
+					<p className={`text-gray-300 text-sm sm:text-md`}>
 						{description}
 					</p>
 					{showLink ? (
 						<div
 							className={`mt-2 flex gap-3 ${
-								isHovered ? `${color}` : `text-gray-500`
+								isHovered ? `${color}` : `text-gray-400`
 							}`}
 						>
 							<FaLink className={`my-auto text-sm sm:text-md`} />
