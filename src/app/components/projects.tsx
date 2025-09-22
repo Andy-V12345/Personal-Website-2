@@ -96,7 +96,7 @@ function ProjectBox({
 	return (
 		<Link
 			target="_blank"
-			className={`w-full z-0 bg-white ${
+			className={`w-full z-0 glass ${
 				isHovered ? `${styles.hovered}` : `${styles.unhovered}`
 			}`}
 			href={url}
@@ -104,7 +104,9 @@ function ProjectBox({
 			onMouseEnter={() => setHovered(true)}
 			onMouseLeave={() => setHovered(false)}
 		>
-			<div className={`${styles.projectContainer} ${shadow}`}>
+			<div
+				className={`${styles.projectContainer} ${shadow} ${styles.customShadowRadius}`}
+			>
 				<Image
 					className={`${styles.image} my-auto rounded-xl`}
 					src={image}

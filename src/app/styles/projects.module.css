@@ -8,11 +8,15 @@
 
 .projectContainer {
 	display: flex;
-	border-radius: 15px;
+	/* border-radius: 15px; */
 	gap: 20px;
 	padding: 20px;
 	width: 100%;
-	background-color: white;
+	/* background-color: white; */
+}
+
+.customShadowRadius {
+	border-radius: 2rem;
 }
 
 .accountiveShadow {
