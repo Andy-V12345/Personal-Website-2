@@ -1,41 +1,36 @@
-"use client"
+'use client'
 
-import styles from './styles/home.module.css'
-import Hero from './components/hero';
-import Skills from './components/skills';
-import Experiences from './components/experiences';
-import Projects from './components/projects';
-import Footer from './components/footer';
-import { useState, useEffect } from 'react';
-import FloatingNav from './components/floatingNav';
+import Hero from './components/hero'
+import Skills from './components/skills'
+import Experiences from './components/experiences'
+import Projects from './components/projects'
+import Footer from './components/footer'
+import { useState, useEffect } from 'react'
+import FloatingNav from './components/floatingNav'
 
 export default function Home() {
+	const [width, setWidth] = useState<number>(0)
 
+	useEffect(() => {
+		const handleWindowSizeChange = () => {
+			setWidth(window.innerWidth)
+		}
 
-  const [width, setWidth] = useState<number>(0)
+		window.addEventListener('resize', handleWindowSizeChange)
 
-  useEffect(() => {
+		return () => {
+			window.removeEventListener('resize', handleWindowSizeChange)
+		}
+	})
 
-    const handleWindowSizeChange = () => {
-      setWidth(window.innerWidth)
-    }
-
-    window.addEventListener('resize', handleWindowSizeChange);
-
-    return () => {
-      window.removeEventListener('resize', handleWindowSizeChange);
-    }
-  });
-
-  return (
-    <div className={`${styles.container} w-full sm:max-w-4xl`}>
-        <FloatingNav/>
-        <Hero />
-        <Skills />
-        <Experiences width={width} />
-        <Projects />
-        <Footer />
-    </div>
-  );
-  
+	return (
+		<div className={`mx-auto space-y-20 w-full sm:max-w-4xl`}>
+			<FloatingNav />
+			<Hero />
+			<Skills />
+			<Experiences width={width} />
+			<Projects />
+			<Footer />
+		</div>
+	)
 }

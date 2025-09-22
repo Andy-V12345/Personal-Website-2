@@ -9,12 +9,7 @@ export default function Projects() {
 	return (
 		<div id="projects" className={`${styles.container}`}>
 			<SectionTitle title="My Projects" />
-			<p className={`mx-auto text-sm text-gray-600`}>
-				Some of my favorite projects I've worked on:
-			</p>
-			<div
-				className={`flex gap-11 flex-col w-11/12 sm:w-3/4 mx-auto bg-white`}
-			>
+			<div className={`flex gap-11 flex-col mx-auto`}>
 				<ProjectBox
 					url="https://leetpatternsai.com"
 					color={`${styles.leetpatternsColor}`}
@@ -115,16 +110,18 @@ function ProjectBox({
 					alt="project logo"
 				/>
 				<div className={styles.textContainer}>
-					<p className={`text-md sm:text-xl font-semibold my-auto`}>
+					<p
+						className={`text-md sm:text-xl font-semibold my-auto text-white`}
+					>
 						{name}
 					</p>
-					<p className={`text-gray-600 text-sm sm:text-md`}>
+					<p className={`text-gray-300 text-sm sm:text-md`}>
 						{description}
 					</p>
 					{showLink ? (
 						<div
 							className={`mt-2 flex gap-3 ${
-								isHovered ? `${color}` : `text-gray-500`
+								isHovered ? `${color}` : `text-gray-400`
 							}`}
 						>
 							<FaLink className={`my-auto text-sm sm:text-md`} />

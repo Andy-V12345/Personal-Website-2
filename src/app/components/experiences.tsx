@@ -1,8 +1,6 @@
-import Link from 'next/link'
 import styles from '../styles/experiences.module.css'
 import Experience from './experience'
 import SectionTitle from './sectionTitle'
-import Image from 'next/image'
 
 export default function Experiences({ width }: { width: number }) {
 	const imgDimensions = 80
@@ -10,11 +8,8 @@ export default function Experiences({ width }: { width: number }) {
 	return (
 		<div id="experience" className={styles.container}>
 			<SectionTitle title="My Experience" />
-			<p className={`mx-auto text-sm text-gray-600`}>
-				A quick summary of my recent experiences:
-			</p>
 
-			<div className={`flex flex-col gap-12 w-10/12 md:w-4/5 mx-auto`}>
+			<div className={`flex flex-col gap-8 mx-auto`}>
 				<Experience
 					width={width}
 					imgDimensions={imgDimensions}
@@ -76,7 +71,7 @@ export default function Experiences({ width }: { width: number }) {
 					imgAlt={'mayfest logo'}
 					date={'Jan 2024 - Jun 2024'}
 					company={'Mayfest Productions'}
-					role={'Mobile App developer'}
+					role={'Mobile App Developer'}
 				>
 					Collaborated with the tech team to create the Dillo Day App
 					using React Native.

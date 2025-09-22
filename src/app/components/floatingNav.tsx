@@ -1,6 +1,5 @@
 import styles from '../styles/navbar.module.css'
 import { motion } from 'framer-motion'
-import Link from 'next/link'
 import { useEffect, useState, useCallback } from 'react'
 
 export default function FloatingNav() {
@@ -12,6 +11,20 @@ export default function FloatingNav() {
 	const [floating, setFloating] = useState(true)
 
 	const [y, setY] = useState(0)
+
+	const scrollToSection = (sectionId: string) => {
+		const element = document.getElementById(sectionId)
+		if (element) {
+			element.scrollIntoView({
+				behavior: 'smooth',
+				block: 'start',
+			})
+		}
+
+		setTimeout(() => {
+			setFloating(false)
+		}, 250)
+	}
 
 	const handleNavigation = useCallback(
 		(e: { currentTarget: any }) => {
@@ -42,15 +55,24 @@ export default function FloatingNav() {
 			transition={{ ease: [0.1, 0.25, 0.3, 1], duration: 0.4 }}
 			className={`${styles.floatingContainer} glass`}
 		>
-			<Link className={`${styles.navButton}`} href="#skills">
+			<button
+				className={`${styles.navButton}`}
+				onClick={() => scrollToSection('skills')}
+			>
 				<p>Skills</p>
-			</Link>
-			<Link className={`${styles.navButton}`} href="#experience">
+			</button>
+			<button
+				className={`${styles.navButton}`}
+				onClick={() => scrollToSection('experience')}
+			>
 				<p>Experience</p>
-			</Link>
-			<Link className={`${styles.navButton}`} href="#projects">
+			</button>
+			<button
+				className={`${styles.navButton}`}
+				onClick={() => scrollToSection('projects')}
+			>
 				<p>Projects</p>
-			</Link>
+			</button>
 		</motion.div>
 	)
 }

@@ -1,70 +1,69 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-bottom: 75px;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
 }
 
 .gridDisplay {
-    margin: 0 auto;
-    margin-top: 20px;
-    display: grid;
-    column-gap: 20px;
-    row-gap: 30px;
-    width: 80%;
+	margin: 0 auto;
+	display: grid;
+	column-gap: 40px;
+	row-gap: 50px;
+	width: fit-content;
+	padding: 25px;
 }
 
 .skillContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    color: #1F2937;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	color: #f3f4f6;
 }
 
 .swift {
-    color: #F05138;
+	color: #f05138;
 }
 
 .python {
-    color: #3776AB;
+	color: #3776ab;
 }
 
 .javascript {
-    color: #F7DF1E;
+	color: #f7df1e;
 }
 
 .react {
-    color: #61DAFB;
+	color: #61dafb;
 }
 
 .nextjs {
-    color: #000000;
+	color: #000000;
 }
 
 .postgres {
-    color: #4169E1;
+	color: #4169e1;
 }
 
 .firebase {
-    color: #FFCA28;
+	color: #ffca28;
 }
 
 .docker {
-    color: #2496ED;
+	color: #2496ed;
 }
 
 .java {
-    color: #F8971F;
+	color: #f8971f;
 }
 
 .nodejs {
-    color: #5FA04E;
+	color: #5fa04e;
 }
 
 .aws {
-    color: #232F3E;
+	color: #232f3e;
 }
 
 .springboot {
-    color: #6DB33F;
+	color: #6db33f;
 }
