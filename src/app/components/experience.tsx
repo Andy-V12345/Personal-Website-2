@@ -34,7 +34,9 @@ export default function Experience({
 			<div className={styles.textContainer}>
 				{width <= 768 && width > 0 ? (
 					<>
-						<p className={`text-sm font-semibold`}>{date}</p>
+						<p className={`text-sm text-black font-medium`}>
+							{date}
+						</p>
 						<p className={`text-lg sm:text-xl font-semibold`}>
 							{company}
 						</p>
@@ -47,13 +49,13 @@ export default function Experience({
 							{company}
 						</p>
 						<p
-							className={`text-sm font-semibold text-right my-auto grow`}
+							className={`text-sm text-right my-auto grow font-medium`}
 						>
 							{date}
 						</p>
 					</div>
 				)}
-				<p className={`text-md sm:text-lg`}>{role}</p>
+				<p className={`text-base`}>{role}</p>
 				<div className={`text-gray-500 text-sm sm:text-md`}>
 					{children}
 				</div>

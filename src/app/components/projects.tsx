@@ -26,16 +26,6 @@ export default function Projects() {
 					showLink={true}
 				/>
 				<ProjectBox
-					url="https://hire-me-please-beta.vercel.app/"
-					color={`${styles.hmpColor}`}
-					shadow={`${styles.hmpShadow}`}
-					name="Hire Me Please"
-					image="/hmp_logo.png"
-					description="A website that helps with SWE internship recruitment"
-					linkText="Visit website"
-					showLink={true}
-				/>
-				<ProjectBox
 					url="https://apps.apple.com/us/app/quick-mental-math/id1520620798"
 					color={`${styles.qmmColor}`}
 					shadow={`${styles.qmmShadow}`}

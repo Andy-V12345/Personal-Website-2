@@ -18,40 +18,6 @@ export default function Experiences({ width }: { width: number }) {
 				<Experience
 					width={width}
 					imgDimensions={imgDimensions}
-					imgSrc={'/robinhood_logo.png'}
-					imgAlt={'robinhood logo'}
-					date={'Jun 2025 - Sep 2025'}
-					company={'Robinhood'}
-					role={'Incoming Software Engineer Intern'}
-				>
-					Incoming software engineer intern at Robinhood for Summer
-					2025
-				</Experience>
-				<Experience
-					width={width}
-					imgDimensions={imgDimensions}
-					imgSrc={'/polo_logo.png'}
-					imgAlt={'polo logo'}
-					date={'Jun 2024 - present'}
-					company={'Polo'}
-					role={'Cofounder, CTO'}
-				>
-					<>
-						Led the development of a campus-only marketplace for
-						goods and services.
-						<a
-							target="_blank"
-							className="ml-1 text-blue-400 font-medium"
-							href="https://www.polo-app.com"
-						>
-							Check us out!
-						</a>
-					</>
-				</Experience>
-
-				<Experience
-					width={width}
-					imgDimensions={imgDimensions}
 					imgSrc={'/northwestern_logo.png'}
 					imgAlt={'northwestern alt'}
 					date={'Sep 2023 - present'}
@@ -66,6 +32,41 @@ export default function Experiences({ width }: { width: number }) {
 							• COMP_SCI_310: Scalable Software Architectures
 						</span>
 					</div>
+				</Experience>
+
+				<Experience
+					width={width}
+					imgDimensions={imgDimensions}
+					imgSrc={'/robinhood_logo.png'}
+					imgAlt={'robinhood logo'}
+					date={'Jun 2025 - Sep 2025'}
+					company={'Robinhood'}
+					role={'Software Engineering Intern'}
+				>
+					Developed a data analysis AI agent for the Experimentation
+					Platform.
+				</Experience>
+
+				<Experience
+					width={width}
+					imgDimensions={imgDimensions}
+					imgSrc={'/polo_logo.png'}
+					imgAlt={'polo logo'}
+					date={'Jun 2024 - Sep 2025'}
+					company={'Polo'}
+					role={'Cofounder, CTO'}
+				>
+					<>
+						Led the development of a campus-only marketplace for
+						goods and services.
+						<a
+							target="_blank"
+							className="ml-1 text-blue-400 font-medium"
+							href="https://www.polo-app.com"
+						>
+							Check us out!
+						</a>
+					</>
 				</Experience>
 
 				<Experience
