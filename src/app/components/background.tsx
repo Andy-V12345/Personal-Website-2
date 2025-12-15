@@ -1,9 +1,9 @@
 'use client'
 
 import { Canvas } from '@react-three/fiber'
-import SphereMesh from './sphereMesh'
 import Stars from './stars'
 import ScrollCameraController from './scrollCameraController'
+import { PeachModel } from './peachModel'
 
 export default function Background() {
 	return (
@@ -11,7 +11,7 @@ export default function Background() {
 			<Canvas>
 				<ScrollCameraController />
 				<Stars />
-				<SphereMesh />
+				<PeachModel scale={0.04} />
 				<ambientLight color="white" intensity={0.75} />
 				<directionalLight position={[0, 7, -7]} intensity={1} />
 			</Canvas>
