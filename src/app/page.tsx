@@ -5,30 +5,18 @@ import Skills from './components/skills'
 import Experiences from './components/experiences'
 import Projects from './components/projects'
 import Footer from './components/footer'
-import { useState, useEffect } from 'react'
 import FloatingNav from './components/floatingNav'
+import { useWindowWidth } from './hooks/useWindowWidth'
 
 export default function Home() {
-	const [width, setWidth] = useState<number>(0)
-
-	useEffect(() => {
-		const handleWindowSizeChange = () => {
-			setWidth(window.innerWidth)
-		}
-
-		window.addEventListener('resize', handleWindowSizeChange)
-
-		return () => {
-			window.removeEventListener('resize', handleWindowSizeChange)
-		}
-	})
+	const width = useWindowWidth()
 
 	return (
 		<div className={`mx-auto space-y-20 w-full sm:max-w-4xl`}>
 			<FloatingNav />
 			<Hero />
 			<Skills />
-			<Experiences width={width} />
+			<Experiences width={width ?? 0} />
 			<Projects />
 			<Footer />
 		</div>

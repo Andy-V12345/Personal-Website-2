@@ -14,19 +14,25 @@ import { useGLTF } from '@react-three/drei'
 const DEFAULT_SCALE = 0.01
 
 export function PeachModel(props) {
-	const { scale = DEFAULT_SCALE, ...rest } = props
+	const { scale = DEFAULT_SCALE, position = [0, 0, 0], ...rest } = props
 	const { nodes, materials } = useGLTF('/scene.gltf')
 	const groupRef = useRef()
 
 	useFrame((_, delta) => {
 		if (groupRef.current) {
 			groupRef.current.rotation.y += delta * 0.5
-			groupRef.current.rotation.x += delta * 0.5
+			groupRef.current.rotation.x += delta * 0.3
 		}
 	})
 
 	return (
-		<group ref={groupRef} {...rest} dispose={null} scale={scale}>
+		<group
+			ref={groupRef}
+			{...rest}
+			position={position}
+			dispose={null}
+			scale={scale}
+		>
 			<mesh
 				geometry={nodes.stem_StemColor_0.geometry}
 				material={materials.StemColor}
