@@ -5,7 +5,7 @@ import { useMemo } from 'react'
 type Vec3 = [number, number, number]
 
 const STAR_COUNT = 100
-const RANGE = 13
+const RANGE = 12
 const STAR_RADIUS = 0.06
 const INNER_RADIUS = 5
 const STAR_COLORS = [0x43aa8b, 0xfb8500]

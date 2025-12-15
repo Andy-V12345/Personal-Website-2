@@ -21,7 +21,10 @@ export default function Background() {
 			<Canvas>
 				<ScrollCameraController />
 				<Stars />
-				<PeachModel scale={peachScale} />
+				<PeachModel
+					scale={peachScale}
+					position={width && width <= 430 ? [0, -6, 0] : [0, -8, 0]}
+				/>
 				<ambientLight color="white" intensity={0.5} />
 				<directionalLight position={[0, 7, -7]} intensity={1} />
 				<directionalLight position={[0, -5, 5]} intensity={0.7} />
