@@ -15,10 +15,13 @@ export default function Home() {
 		<div className={`mx-auto w-full sm:max-w-4xl`}>
 			<FloatingNav />
 			<Hero />
-			<Skills />
-			<Experiences width={width ?? 0} />
-			<Projects />
-			<Footer />
+
+			<div className={`space-y-20`}>
+				<Skills />
+				<Experiences width={width ?? 0} />
+				<Projects />
+				<Footer />
+			</div>
 		</div>
 	)
 }

@@ -1,95 +1,61 @@
 import styles from '../styles/experiences.module.css'
-import Experience from './experience'
 import SectionTitle from './sectionTitle'
+import { Timeline, TimelineItemData } from './timeline'
 
 export default function Experiences({ width }: { width: number }) {
-	const imgDimensions = 80
+	const experiences: TimelineItemData[] = [
+		{
+			date: 'Sep 2023 - present',
+			company: 'Northwestern University',
+			role: 'CS Undergraduate TA',
+			imgSrc: '/northwestern_logo.png',
+			imgAlt: 'northwestern logo',
+			description:
+				'As a TA, I support 100+ students in classes such as Fundamentals of Programming in C/C++ and Scalable Software Architectures by hosting office hours, helping with debugging, and grading assignments.',
+		},
+		{
+			date: 'Jun 2025 - Sep 2025',
+			company: 'Robinhood',
+			role: 'Software Engineering Intern',
+			imgSrc: '/robinhood_logo.png',
+			imgAlt: 'robinhood logo',
+			description:
+				'I built a full-stack AI agent with React and Python/FastAPI to help 50+ data scientists analyze experiments faster. Through efficient context management and tool calling, I reduced token usage by 90% and costs by 75%.',
+		},
+		{
+			date: 'Jun 2024 - Sep 2025',
+			company: 'Polo',
+			role: 'Cofounder, CTO',
+			imgSrc: '/polo_logo.png',
+			imgAlt: 'polo logo',
+			description:
+				'I led the development of a Northwestern-only iOS marketplace using Swift and Firebase, taking it from idea to launch.',
+		},
+		{
+			date: 'Jan 2024 - Jun 2024',
+			company: 'Mayfest Productions',
+			role: 'Mobile App Developer',
+			imgSrc: '/mayfest_logo.png',
+			imgAlt: 'mayfest logo',
+			description:
+				'As a developer on the Mayfest tech team, I helped build a React Native app for the Dillo Day music festival with schedules, live updates, and maps for 10,000+ attendees.',
+		},
+		{
+			date: 'June 2023 - Aug 2023',
+			company: 'Infosys',
+			role: 'Software Engineering Intern',
+			imgSrc: '/infosys_logo.png',
+			imgAlt: 'infosys logo',
+			description:
+				'At Infosys, I built a REST API using Java Spring Boot, PostgreSQL, and Docker for a visitor management system used by 20,000+ employees and visitors.',
+		},
+	]
 
 	return (
 		<div id="experience" className={styles.container}>
 			<SectionTitle title="My Experience" />
 
-			<div className={`flex flex-col gap-8 mx-auto`}>
-				<Experience
-					width={width}
-					imgDimensions={imgDimensions}
-					imgSrc={'/northwestern_logo.png'}
-					imgAlt={'northwestern alt'}
-					date={'Sep 2023 - present'}
-					company={'Northwestern University'}
-					role={'CS Peer Mentor'}
-				>
-					<div className="flex flex-col gap-[1px]">
-						<span>
-							• COMP_SCI_211: Fundamentals of Programming in C/C++
-						</span>
-						<span>
-							• COMP_SCI_310: Scalable Software Architectures
-						</span>
-					</div>
-				</Experience>
-
-				<Experience
-					width={width}
-					imgDimensions={imgDimensions}
-					imgSrc={'/robinhood_logo.png'}
-					imgAlt={'robinhood logo'}
-					date={'Jun 2025 - Sep 2025'}
-					company={'Robinhood'}
-					role={'Software Engineering Intern'}
-				>
-					Developed a data analysis AI agent for the Experimentation
-					Platform.
-				</Experience>
-
-				<Experience
-					width={width}
-					imgDimensions={imgDimensions}
-					imgSrc={'/polo_logo.png'}
-					imgAlt={'polo logo'}
-					date={'Jun 2024 - Sep 2025'}
-					company={'Polo'}
-					role={'Cofounder, CTO'}
-				>
-					<>
-						Led the development of a campus-only marketplace for
-						goods and services.
-						<a
-							target="_blank"
-							className="ml-1 text-blue-400 font-medium"
-							href="https://www.polo-app.com"
-						>
-							Check us out!
-						</a>
-					</>
-				</Experience>
-
-				<Experience
-					width={width}
-					imgDimensions={imgDimensions}
-					imgSrc={'/mayfest_logo.png'}
-					imgAlt={'mayfest logo'}
-					date={'Jan 2024 - Jun 2024'}
-					company={'Mayfest Productions'}
-					role={'Mobile App Developer'}
-				>
-					Collaborated with the tech team to create the Dillo Day App
-					using React Native.
-				</Experience>
-
-				<Experience
-					width={width}
-					imgDimensions={imgDimensions}
-					imgSrc={'/infosys_logo.png'}
-					imgAlt={'infosys logo'}
-					date={'June 2023 - Aug 2023'}
-					company={'Infosys'}
-					role={'Software Engineer Intern'}
-				>
-					Developed a backend system for a visitor management system
-					using Java Spring Boot and PostgreSQL.
-				</Experience>
-			</div>
+			<Timeline items={experiences} />
 		</div>
 	)
 }

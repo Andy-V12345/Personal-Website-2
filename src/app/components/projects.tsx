@@ -91,7 +91,7 @@ function ProjectBox({
 	return (
 		<Link
 			target="_blank"
-			className={`w-full z-0 glass ${
+			className={`w-full z-0 glass-frosty ${
 				isHovered ? `${styles.hovered}` : `${styles.unhovered}`
 			}`}
 			href={url}

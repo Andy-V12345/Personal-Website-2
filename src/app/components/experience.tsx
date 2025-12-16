@@ -23,7 +23,7 @@ export default function Experience({
 	children,
 }: ExperienceProps) {
 	return (
-		<div className={`${styles.experienceContainer} glass w-full`}>
+		<div className={`${styles.experienceContainer} glass-frosty w-full`}>
 			<Image
 				className={`${styles.image}`}
 				src={imgSrc}

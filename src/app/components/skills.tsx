@@ -21,7 +21,7 @@ export default function Skills() {
 		<div id="skills" className={styles.container}>
 			<SectionTitle title="My Skills" />
 			<div
-				className={`${styles.gridDisplay} glass grid-cols-2 sm:grid-cols-4`}
+				className={`${styles.gridDisplay} glass-light grid-cols-2 sm:grid-cols-4`}
 			>
 				<Skill iconName="python" name="Python" Icon={SiPython} />
 				<Skill iconName="swift" name="Swift/SwiftUI" Icon={SiSwift} />
