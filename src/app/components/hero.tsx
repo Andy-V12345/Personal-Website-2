@@ -5,7 +5,7 @@ import { FaLinkedin, FaGithub, FaEnvelope, FaDownload } from 'react-icons/fa'
 export default function Hero() {
 	return (
 		<div
-			className={`flex flex-col gap-5 justify-center h-svh pb-24 sm:pb-40`}
+			className={`flex flex-col gap-5 justify-center h-svh pb-24 sm:pb-40 sm:max-w-4xl mx-auto`}
 		>
 			<h1
 				className={`text-[#ff8c61] w-full sm:text-6xl md:text-7xl xl:text-8xl text-5xl font-medium text-center`}

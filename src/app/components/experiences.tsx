@@ -50,9 +50,11 @@ export default function Experiences({ width }: { width: number }) {
 				'At Infosys, I built a REST API using Java Spring Boot, PostgreSQL, and Docker for a visitor management system used by 20,000+ employees and visitors.',
 		},
 	]
-
 	return (
-		<div id="experience" className={styles.container}>
+		<div
+			id="experience"
+			className={`${styles.container} sm:max-w-4xl mx-auto`}
+		>
 			<SectionTitle title="My Experience" />
 
 			<Timeline items={experiences} />

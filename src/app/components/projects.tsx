@@ -7,7 +7,10 @@ import { useState } from 'react'
 
 export default function Projects() {
 	return (
-		<div id="projects" className={`${styles.container}`}>
+		<div
+			id="projects"
+			className={`${styles.container} sm:max-w-4xl mx-auto`}
+		>
 			<SectionTitle title="My Projects" />
 			<div className={`flex gap-11 flex-col mx-auto`}>
 				<ProjectBox

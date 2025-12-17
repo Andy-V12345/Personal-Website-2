@@ -4,7 +4,7 @@ import { useMemo } from 'react'
 
 type Vec3 = [number, number, number]
 
-const STAR_COUNT = 50
+const STAR_COUNT = 25
 const RANGE = 12
 const STAR_RADIUS = 0.06
 const INNER_RADIUS = 5

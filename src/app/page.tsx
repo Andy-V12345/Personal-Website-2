@@ -12,7 +12,7 @@ export default function Home() {
 	const width = useWindowWidth()
 
 	return (
-		<div className={`mx-auto w-full sm:max-w-4xl`}>
+		<div className={`w-full`}>
 			<FloatingNav />
 			<Hero />
 
