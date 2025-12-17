@@ -1,19 +1,17 @@
-import styles from '../styles/projects.module.css'
 import SectionTitle from './sectionTitle'
 import Image from 'next/image'
 import { FaGithub, FaLink } from 'react-icons/fa'
 import Link from 'next/link'
-import { useState } from 'react'
 import { useWindowWidth } from '../hooks/useWindowWidth'
 
 export default function Projects() {
 	return (
 		<div
 			id="projects"
-			className={`${styles.container} sm:max-w-4xl mx-auto`}
+			className={`flex flex-col gap-[50px] sm:max-w-4xl mx-auto`}
 		>
 			<SectionTitle title="My Projects" />
-			<div className={`grid grid-cols-2 gap-3 mx-auto`}>
+			<div className={`grid grid-cols-2 gap-4 mx-auto`}>
 				<ProjectBox
 					url="https://leetpatternsai.com"
 					githubUrl="https://github.com/Andy-V12345/LeetPatterns"
