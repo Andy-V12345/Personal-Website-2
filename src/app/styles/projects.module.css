@@ -12,59 +12,51 @@
 }
 
 .customShadowRadius {
-	border-radius: 1rem;
+	border-radius: 1.5rem;
 }
 
 .accountiveShadow {
 	box-shadow: rgb(157, 188, 236) 0px 2px 8px 0px;
 }
 
-.accountiveColor {
+.accountiveColor:hover {
 	color: rgb(157, 188, 236);
+}
+
+.accountiveColor {
+	color: rgb(156, 163, 175);
 }
 
 .qmmShadow {
 	box-shadow: rgb(102, 62, 178) 0px 2px 8px 0px;
 }
 
-.qmmColor {
+.qmmColor:hover {
 	color: rgb(102, 62, 178);
 }
 
-.wrShadow {
-	box-shadow: rgb(136, 188, 69) 0px 2px 8px 0px;
-}
-
-.wrColor {
-	color: rgb(136, 188, 69);
-}
-
-.pokerShadow {
-	box-shadow: rgb(237, 29, 36) 0px 2px 8px 0px;
-}
-
-.pokerColor {
-	color: rgb(237, 29, 36);
+.qmmColor {
+	color: rgb(156, 163, 175);
 }
 
 .nomifyShadow {
 	box-shadow: rgb(123, 196, 130) 0px 2px 8px 0px;
 }
 
-.nomifyColor {
+.nomifyColor:hover {
 	color: rgb(123, 196, 130);
 }
 
-.hmpColor {
-	color: rgb(73, 207, 203);
+.nomifyColor {
+	color: rgb(156, 163, 175);
 }
 
-.hmpShadow {
-	box-shadow: rgb(73, 207, 203) 0px 2px 8px 0px;
+.leetpatternsColor:hover {
+	color: #fd8913;
 }
 
 .leetpatternsColor {
-	color: #fd8913;
+	color: rgb(156, 163, 175);
 }
 
 .leetpatternsShadow {
@@ -81,14 +73,4 @@
 
 .image {
 	object-fit: contain;
-}
-
-.hovered {
-	transform: scale(1.05);
-	transition: 0.3s ease-in-out;
-}
-
-.unhovered {
-	transform: scale(1);
-	transition: 0.3s ease-in-out;
 }

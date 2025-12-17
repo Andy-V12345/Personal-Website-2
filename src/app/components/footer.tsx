@@ -5,7 +5,7 @@ import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
 export default function Footer() {
 	return (
 		<footer
-			className={`${styles.container} glass-light justify-center gap-2 sm:gap-0 sm:justify-start flex-col sm:flex-row`}
+			className={`${styles.container} glass-light justify-center gap-2 sm:gap-0 sm:justify-start flex-col sm:flex-row sm:max-w-4xl mx-auto`}
 		>
 			<div
 				className={`${styles.contactContainer} justify-center sm:justify-start`}
