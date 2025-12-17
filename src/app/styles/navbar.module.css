@@ -1,16 +1,15 @@
 .floatingContainer {
-	position: sticky;
+	position: fixed;
 	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
 	display: flex;
 	justify-content: center;
 	padding: 13px 15px;
 	gap: 20px;
 	width: max-content;
-	margin: 0 auto;
-	/* background-color: white; */
 	z-index: 10;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-	border-radius: 25px;
 }
 
 .navButton {
@@ -24,7 +23,7 @@
 }
 
 .navButton:hover {
-	background-color: #8597b1;
+	background-color: #ff8c61;
 	transition: 0.15s ease-in-out;
 }
 

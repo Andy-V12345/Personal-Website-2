@@ -53,7 +53,7 @@ export default function FloatingNav() {
 			variants={variants}
 			animate={floating ? 'visible' : 'hidden'}
 			transition={{ ease: [0.1, 0.25, 0.3, 1], duration: 0.4 }}
-			className={`${styles.floatingContainer} glass`}
+			className={`${styles.floatingContainer} glass-light`}
 		>
 			<button
 				className={`${styles.navButton}`}

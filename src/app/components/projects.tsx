@@ -1,64 +1,51 @@
-import styles from '../styles/projects.module.css'
 import SectionTitle from './sectionTitle'
 import Image from 'next/image'
-import { FaLink } from 'react-icons/fa'
+import { FaGithub, FaLink } from 'react-icons/fa'
 import Link from 'next/link'
-import { useState } from 'react'
 
 export default function Projects() {
 	return (
-		<div id="projects" className={`${styles.container}`}>
+		<div
+			id="projects"
+			className={`flex flex-col gap-[50px] sm:max-w-4xl mx-auto`}
+		>
 			<SectionTitle title="My Projects" />
-			<div className={`flex gap-11 flex-col mx-auto`}>
+			<div className={`grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto`}>
 				<ProjectBox
 					url="https://leetpatternsai.com"
-					color={`${styles.leetpatternsColor}`}
-					shadow={`${styles.leetpatternsShadow}`}
+					githubUrl="https://github.com/Andy-V12345/LeetPatterns"
+					iconColor="text-[#fd8913]"
 					name="LeetPatterns.ai"
 					image="/leetpatterns_logo.png"
-					description="A web app where users can practice identifying common LeetCode patterns with AI generated questions and explanations"
+					description="A web app where users can practice identifying common LeetCode patterns with AI generated questions and explanations."
 					linkText="Visit website"
-					showLink={true}
 				/>
 				<ProjectBox
 					url="https://apps.apple.com/us/app/quick-mental-math/id1520620798"
-					color={`${styles.qmmColor}`}
-					shadow={`${styles.qmmShadow}`}
+					iconColor="text-[#2B2C6C]"
 					image="/qmm_logo.png"
 					name="Quick Mental Math"
-					description="An iOS app that helps elementary students learn basic math operations."
-					showLink={true}
+					description="An iOS app that helps elementary students learn basic math operations. Users can practice by themselves, or they can play games against their friends."
 					linkText="See on App Store"
+					githubUrl="https://github.com/Andy-V12345/QMM"
 				/>
 				<ProjectBox
 					url="https://apps.apple.com/us/app/nomify/id6529250827"
-					color={`${styles.nomifyColor}`}
-					shadow={`${styles.nomifyShadow}`}
+					iconColor="text-[#7bc482]"
 					name="Nomify"
 					image="/nomify_logo.png"
-					description="A personalized food allergen assistant powered by Gemini AI"
-					linkText="See on app store"
-					showLink={true}
+					description="Nomify is a personalized food allergen assistant powered by Gemini AI. Users can upload a photo of their food and get information about the ingredients and potential allergens."
+					linkText="See on App Store"
+					githubUrl="https://github.com/Andy-V12345/Nomify"
 				/>
 				<ProjectBox
 					url="https://apps.apple.com/us/app/accountive/id6468552927"
-					color={`${styles.accountiveColor}`}
-					shadow={`${styles.accountiveShadow}`}
+					iconColor="text-[#9dbcec]"
 					name="Accountive"
 					image="/accountive_logo.png"
-					description="A social media todo list where friends hold each other accountable."
+					description="A social media todo list where friends hold each other accountable. When you complete a task, you can mark it as done and your friends will see it."
 					linkText="See on App Store"
-					showLink={true}
-				/>
-				<ProjectBox
-					url="https://github.com/Andy-V12345/Poker/tree/main"
-					color={`${styles.pokerColor}`}
-					shadow={`${styles.pokerShadow}`}
-					image="/poker_logo.png"
-					name="Interactive Poker Simulator"
-					description="A Python program where users can play Texas Holdem Poker with the computer through the terminal."
-					showLink={true}
-					linkText="Github Repo"
+					githubUrl="https://github.com/Andy-V12345/Accountive"
 				/>
 			</div>
 		</div>
@@ -67,71 +54,74 @@ export default function Projects() {
 
 interface ProjectBoxProps {
 	url: string
+	githubUrl?: string | undefined
 	name: string
 	description: string
 	image: string
-	shadow: string
-	color: string
-	showLink: boolean
+	iconColor: string
 	linkText: string
 }
 
 function ProjectBox({
 	url,
+	githubUrl,
 	name,
 	image,
 	description,
-	shadow,
-	color,
-	showLink,
+	iconColor,
 	linkText,
 }: ProjectBoxProps) {
-	const [isHovered, setHovered] = useState(false)
-
 	return (
-		<Link
-			target="_blank"
-			className={`w-full z-0 glass ${
-				isHovered ? `${styles.hovered}` : `${styles.unhovered}`
-			}`}
-			href={url}
-			onClick={() => setHovered(false)}
-			onMouseEnter={() => setHovered(true)}
-			onMouseLeave={() => setHovered(false)}
+		<div
+			className={`w-full h-full z-0 glass-light flex flex-col p-4 gap-4 items-center`}
 		>
+			<Image
+				className={`object-contain rounded-2xl mr-auto`}
+				src={image}
+				width={100}
+				height={100}
+				alt="project logo"
+			/>
 			<div
-				className={`${styles.projectContainer} ${shadow} ${styles.customShadowRadius}`}
+				className={`text-white text-start flex flex-col gap-14 h-full w-full`}
 			>
-				<Image
-					className={`${styles.image} my-auto rounded-xl`}
-					src={image}
-					width={100}
-					height={100}
-					alt="project logo"
-				/>
-				<div className={styles.textContainer}>
-					<p
-						className={`text-md sm:text-xl font-semibold my-auto text-white`}
-					>
-						{name}
-					</p>
-					<p className={`text-gray-300 text-sm sm:text-md`}>
+				<div>
+					<p className={`text-md sm:text-xl font-semibold`}>{name}</p>
+					<p className={`text-gray-200 text-sm sm:text-md`}>
 						{description}
 					</p>
-					{showLink ? (
-						<div
-							className={`mt-2 flex gap-3 ${
-								isHovered ? `${color}` : `text-gray-400`
-							}`}
+				</div>
+
+				<div className={`flex flex-col md:flex-row mt-auto gap-3`}>
+					{url && (
+						<Link
+							target="_blank"
+							href={url}
+							className={`flex items-center gap-2 w-full md:w-fit glass-light px-2 py-1 text-sm hover:opacity-50 transition-all`}
+							style={{
+								boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 12px',
+							}}
 						>
-							<FaLink className={`my-auto text-sm sm:text-md`} />
-							<p className={`my-auto text-sm sm:text-md`}>
-								{linkText}
-							</p>
-						</div>
-					) : null}
+							<FaLink className={`${iconColor}`} />
+							<p>{linkText}</p>
+						</Link>
+					)}
+
+					{githubUrl && (
+						<Link
+							target="_blank"
+							href={githubUrl}
+							className={`flex items-center gap-2 w-full md:w-fit glass-light px-2 py-1 text-sm hover:opacity-50 transition-all`}
+							style={{
+								boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 12px',
+							}}
+						>
+							<FaGithub className={`text-black`} />
+							<p>GitHub Repo</p>
+						</Link>
+					)}
 				</div>
 			</div>
-		</Link>
+		</div>
 	)
 }
