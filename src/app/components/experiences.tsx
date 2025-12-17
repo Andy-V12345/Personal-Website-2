@@ -11,7 +11,7 @@ export default function Experiences({ width }: { width: number }) {
 			imgSrc: '/northwestern_logo.png',
 			imgAlt: 'northwestern logo',
 			description:
-				'As a TA, I support 100+ students in classes such as Fundamentals of Programming in C/C++ and Scalable Software Architectures by hosting office hours, helping with debugging, and grading assignments.',
+				'As a TA, I helped 100+ students in classes such as Fundamentals of Programming in C/C++ and Scalable Software Architectures by hosting office hours, helping with debugging, and grading assignments.',
 		},
 		{
 			date: 'Jun 2025 - Sep 2025',
@@ -29,7 +29,7 @@ export default function Experiences({ width }: { width: number }) {
 			imgSrc: '/polo_logo.png',
 			imgAlt: 'polo logo',
 			description:
-				'I led the development of a Northwestern-only iOS marketplace using Swift and Firebase, taking it from idea to launch.',
+				'I led the development of a Northwestern-only iOS marketplace using Swift and Firebase. Throughout the process, I was responsible for important decisions such as UI/UX design, backend architecture, and project management.',
 		},
 		{
 			date: 'Jan 2024 - Jun 2024',
