@@ -11,7 +11,7 @@ export default function Projects() {
 			className={`flex flex-col gap-[50px] sm:max-w-4xl mx-auto`}
 		>
 			<SectionTitle title="My Projects" />
-			<div className={`grid grid-cols-2 gap-4 mx-auto`}>
+			<div className={`grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto`}>
 				<ProjectBox
 					url="https://leetpatternsai.com"
 					githubUrl="https://github.com/Andy-V12345/LeetPatterns"
@@ -72,8 +72,6 @@ function ProjectBox({
 	iconColor,
 	linkText,
 }: ProjectBoxProps) {
-	const width = useWindowWidth()
-
 	return (
 		<div
 			className={`w-full h-full z-0 glass-light flex flex-col p-4 gap-4 items-center`}
@@ -90,23 +88,17 @@ function ProjectBox({
 			>
 				<div>
 					<p className={`text-md sm:text-xl font-semibold`}>{name}</p>
-					<p className={`text-gray-100 text-sm sm:text-md`}>
+					<p className={`text-gray-200 text-sm sm:text-md`}>
 						{description}
 					</p>
 				</div>
 
-				<div
-					className={`flex ${
-						width && width < 800 ? 'flex-col' : 'flex-row'
-					} mt-auto gap-3`}
-				>
+				<div className={`flex flex-col md:flex-row mt-auto gap-3`}>
 					{url && (
 						<Link
 							target="_blank"
 							href={url}
-							className={`flex items-center gap-2 ${
-								width && width < 800 ? 'w-full' : 'w-fit'
-							} glass-light px-2 py-1 text-sm hover:opacity-50 transition-all`}
+							className={`flex items-center gap-2 w-full md:w-fit glass-light px-2 py-1 text-sm hover:opacity-50 transition-all`}
 							style={{
 								boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 12px',
 							}}
@@ -120,9 +112,7 @@ function ProjectBox({
 						<Link
 							target="_blank"
 							href={githubUrl}
-							className={`flex items-center gap-2 ${
-								width && width < 800 ? 'w-full' : 'w-fit'
-							} glass-light px-2 py-1 text-sm hover:opacity-50 transition-all`}
+							className={`flex items-center gap-2 w-full md:w-fit glass-light px-2 py-1 text-sm hover:opacity-50 transition-all`}
 							style={{
 								boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 12px',
 							}}

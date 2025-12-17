@@ -1,4 +1,3 @@
-import styles from '../styles/home.module.css'
 import Link from 'next/link'
 import { FaLinkedin, FaGithub, FaEnvelope, FaDownload } from 'react-icons/fa'
 
@@ -8,7 +7,7 @@ export default function Hero() {
 			className={`flex flex-col gap-5 justify-center h-svh pb-24 sm:pb-40 sm:max-w-4xl mx-auto`}
 		>
 			<h1
-				className={`text-[#ff8c61] w-full sm:text-6xl md:text-7xl xl:text-8xl text-5xl font-medium text-center`}
+				className={`text-[#ff7847] w-full sm:text-6xl md:text-7xl xl:text-8xl text-5xl font-medium text-center`}
 			>
 				Hi, I'm Andy!
 			</h1>
@@ -26,18 +25,21 @@ export default function Hero() {
 				className={`flex justify-center items-center mt-2 gap-5 text-[22px] text-[#e5e7eb] mx-auto`}
 			>
 				<Link
+					target="_blank"
 					className={`hover:opacity-50`}
 					href="https://www.linkedin.com/in/andyvu04/"
 				>
 					<FaLinkedin />
 				</Link>
 				<Link
+					target="_blank"
 					className={`hover:opacity-50`}
 					href="https://github.com/Andy-V12345"
 				>
 					<FaGithub />
 				</Link>
 				<Link
+					target="_blank"
 					className={`hover:opacity-50`}
 					href="mailto:andyvu04@gmail.com"
 				>
