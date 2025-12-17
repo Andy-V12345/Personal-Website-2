@@ -2,7 +2,6 @@ import SectionTitle from './sectionTitle'
 import Image from 'next/image'
 import { FaGithub, FaLink } from 'react-icons/fa'
 import Link from 'next/link'
-import { useWindowWidth } from '../hooks/useWindowWidth'
 
 export default function Projects() {
 	return (
