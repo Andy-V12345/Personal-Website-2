@@ -44,7 +44,7 @@ export function Timeline({ items }: TimelineProps) {
 						{/* Experience card column */}
 						<div className="w-full">
 							<div className="glass-light p-3 sm:p-4">
-								<h3 className="sm:text-xl text-lgfont-semibold text-white">
+								<h3 className="sm:text-xl text-lg font-medium text-white">
 									{item.role}
 								</h3>
 
