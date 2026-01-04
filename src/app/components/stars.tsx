@@ -1,6 +1,8 @@
 'use client'
 
-import { useMemo } from 'react'
+import { useMemo, useRef } from 'react'
+import { useFrame } from '@react-three/fiber'
+import type { Mesh } from 'three'
 
 type Vec3 = [number, number, number]
 
@@ -9,10 +11,35 @@ const RANGE = 11
 const STAR_RADIUS = 0.13
 const INNER_RADIUS = 5
 const STAR_COLORS = [0x43aa8b, 0xfb8500]
+const ROTATION_SPEED = 1.0
+
+type StarData = {
+	pos: Vec3
+	color: number
+}
+
+function Star({ pos, color }: StarData) {
+	const meshRef = useRef<Mesh>(null)
+
+	useFrame((_, delta) => {
+		if (meshRef.current) {
+			meshRef.current.rotation.x += delta * ROTATION_SPEED
+			meshRef.current.rotation.y += delta * ROTATION_SPEED
+			meshRef.current.rotation.z += delta * ROTATION_SPEED
+		}
+	})
+
+	return (
+		<mesh ref={meshRef} position={pos}>
+			<icosahedronGeometry args={[STAR_RADIUS, 0]} />
+			<meshPhongMaterial color={color} shininess={10} specular={color} />
+		</mesh>
+	)
+}
 
 export default function Stars() {
 	const stars = useMemo(() => {
-		const pts: { pos: Vec3; color: number }[] = []
+		const pts: StarData[] = []
 		for (let i = 0; i < STAR_COUNT; i += 1) {
 			let x = 0
 			let y = 0
@@ -35,15 +62,8 @@ export default function Stars() {
 
 	return (
 		<>
-			{stars.map(({ pos, color }, idx) => (
-				<mesh key={`star-${idx}`} position={pos}>
-					<sphereGeometry args={[STAR_RADIUS, 8, 8]} />
-					<meshPhongMaterial
-						color={color}
-						shininess={10}
-						specular={color}
-					/>
-				</mesh>
+			{stars.map((star, idx) => (
+				<Star key={`star-${idx}`} {...star} />
 			))}
 		</>
 	)
