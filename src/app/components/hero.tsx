@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { FaLinkedin, FaGithub, FaEnvelope, FaDownload } from 'react-icons/fa'
+import { pixelifySans } from '../styles/fonts'
 
 export default function Hero() {
 	return (
@@ -7,7 +8,7 @@ export default function Hero() {
 			className={`flex flex-col gap-5 justify-center h-svh pb-24 sm:pb-40 sm:max-w-4xl mx-auto`}
 		>
 			<h1
-				className={`text-[#ff7847] w-full sm:text-6xl md:text-7xl xl:text-8xl text-5xl font-medium text-center`}
+				className={`text-[#ff7847] w-full sm:text-6xl md:text-7xl xl:text-8xl text-5xl font-bold text-center ${pixelifySans.className}`}
 			>
 				Hi, I'm Andy!
 			</h1>
@@ -16,9 +17,9 @@ export default function Hero() {
 				className={`text-white lg:text-xl text-xs sm:text-base font-light text-center`}
 			>
 				I'm a computer science student at Northwestern University
-				aspiring to become a software engineer. I have experience in
-				both front-end and back-end development and I'm continually
-				seeking opportunities to create user-centric solutions.
+				aspiring to become a software engineer. I have experience across
+				the stack and I'm always seeking opportunities to create
+				user-centric solutions.
 			</p>
 
 			<div

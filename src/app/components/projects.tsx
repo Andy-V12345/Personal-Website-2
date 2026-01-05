@@ -30,12 +30,12 @@ export default function Projects() {
 					githubUrl="https://github.com/Andy-V12345/QMM"
 				/>
 				<ProjectBox
-					url="https://apps.apple.com/us/app/nomify/id6529250827"
+					url=""
 					iconColor="text-[#7bc482]"
 					name="Nomify"
 					image="/nomify_logo.png"
 					description="Nomify is a personalized food allergen assistant powered by Gemini AI. Users can upload a photo of their food and get information about the ingredients and potential allergens."
-					linkText="See on App Store"
+					linkText=""
 					githubUrl="https://github.com/Andy-V12345/Nomify"
 				/>
 				<ProjectBox
@@ -117,7 +117,7 @@ function ProjectBox({
 							}}
 						>
 							<FaGithub className={`text-black`} />
-							<p>GitHub Repo</p>
+							<p>GitHub</p>
 						</Link>
 					)}
 				</div>

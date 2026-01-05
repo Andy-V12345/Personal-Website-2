@@ -1,13 +1,10 @@
 import type { Metadata } from 'next'
-import { Nunito_Sans } from 'next/font/google'
 import './globals.css'
 import Background from './components/background'
-
-const nunitoSans = Nunito_Sans({
-	subsets: ['latin'],
-	weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
-	display: 'swap',
-})
+import { LoadingScreenWrapper } from './components/loadingScreenWrapper'
+import { LoadingProvider } from './contexts/LoadingContext'
+import { LoadingContent } from './components/loadingContent'
+import { montserrat } from './styles/fonts'
 
 export const metadata: Metadata = {
 	title: 'Andy Vu | Portfolio',
@@ -21,9 +18,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={nunitoSans.className}>
-				<Background />
-				{children}
+			<body className={montserrat.className}>
+				<LoadingProvider>
+					<Background />
+					<LoadingScreenWrapper />
+					<LoadingContent>{children}</LoadingContent>
+				</LoadingProvider>
 			</body>
 		</html>
 	)
