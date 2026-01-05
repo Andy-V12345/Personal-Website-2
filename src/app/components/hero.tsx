@@ -17,9 +17,9 @@ export default function Hero() {
 				className={`text-white lg:text-xl text-xs sm:text-base font-light text-center`}
 			>
 				I'm a computer science student at Northwestern University
-				aspiring to become a software engineer. I have experience in
-				both front-end and back-end development and I'm continually
-				seeking opportunities to create user-centric solutions.
+				aspiring to become a software engineer. I have experience across
+				the stack and I'm always seeking opportunities to create
+				user-centric solutions.
 			</p>
 
 			<div

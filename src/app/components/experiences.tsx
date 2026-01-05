@@ -11,7 +11,7 @@ export default function Experiences({ width }: { width: number }) {
 			imgSrc: '/northwestern_logo.png',
 			imgAlt: 'northwestern logo',
 			description:
-				'As a TA, I helped 100+ students in classes such as Fundamentals of Programming in C/C++ and Scalable Software Architectures by hosting office hours, helping with debugging, and grading assignments.',
+				'As a TA, I helped 50+ students in classes such as Fundamentals of Programming in C/C++ and Scalable Software Architectures by hosting office hours, helping with debugging, and grading assignments.',
 		},
 		{
 			date: 'Jun 2025 - Sep 2025',
@@ -20,7 +20,7 @@ export default function Experiences({ width }: { width: number }) {
 			imgSrc: '/robinhood_logo.png',
 			imgAlt: 'robinhood logo',
 			description:
-				'I built a full-stack AI agent with React and Python/FastAPI to help 50+ data scientists analyze experiments faster. Through efficient context management and tool calling, I reduced token usage by 90% and costs by 75%.',
+				'I built a full-stack AI agent with React and Python/FastAPI to help data scientists analyze experiments faster. Through efficient context management and tool calling, I reduced token usage by 90% and costs by 75%.',
 		},
 		{
 			date: 'Jun 2024 - Sep 2025',

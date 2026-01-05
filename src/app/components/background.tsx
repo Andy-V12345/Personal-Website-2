@@ -5,6 +5,7 @@ import { Canvas } from '@react-three/fiber'
 import Stars from './stars'
 import ScrollCameraController from './scrollCameraController'
 import { PeachModel } from './peachModel'
+import SceneReady from './sceneReady'
 import { useWindowWidth } from '../hooks/useWindowWidth'
 
 export default function Background() {
@@ -55,6 +56,7 @@ export default function Background() {
 				<ScrollCameraController />
 				<Stars />
 				<PeachModel scale={peachScale} position={peachPosition} />
+				<SceneReady />
 				<ambientLight color="white" intensity={0.5} />
 				<directionalLight position={[0, 7, -7]} intensity={1} />
 				<directionalLight position={[0, -5, 5]} intensity={0.7} />

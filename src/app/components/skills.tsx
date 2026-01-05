@@ -220,7 +220,9 @@ export default function Skills() {
 									/>
 
 									{isExpanded && (
-										<span className={`text-sm font-medium`}>
+										<span
+											className={`text-sm font-semibold`}
+										>
 											{skill.name}
 										</span>
 									)}
